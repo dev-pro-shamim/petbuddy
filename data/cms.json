@@ -1,0 +1,39 @@
+{
+  "announcement": "🍁 Canadian Owned & Operated | 100% All-Natural Grass-Fed Beef Dog Treats | Buy on Amazon Canada 🇨🇦",
+  "amazonUrl": "https://www.amazon.ca/dp/B0H637LFT4/?th=1",
+  "email": "infor@pet-buddy.net",
+  "phone": "+1 (306) 260-4467",
+  "address": "4 Alrita Cres, Toronto, ON, M1R 4M3, Canada",
+  "hero": {
+    "badge": "🇨🇦 Canadian Owned & Operated • 100% Pure Natural",
+    "titleLine1": "Pure Pet Treats &",
+    "titleHighlight": "Natural Bully Sticks",
+    "subtitle": "Single-ingredient, grass-fed beef pizzle oven-roasted to perfection. Calibrated in 6-inch & 12-inch cuts for safe chewing, cleaner canine teeth, and happier dogs.",
+    "ctaQuote": "Get a Wholesale Quote",
+    "ctaAmazon": "Shop on Amazon Canada 🇨🇦"
+  },
+  "promoBanner": {
+    "badge": "Limited Time Wholesale Offer",
+    "title": "Stock Pet Buddy In Your Retail Store or Clinic",
+    "subtitle": "Enjoy tiered B2B pricing, free Canadian freight on bulk orders, and high-margin natural pet chews.",
+    "buttonText": "Request Case Pricing"
+  },
+  "faqs": [
+    {
+      "q": "What makes Pet Buddy bully sticks different from regular rawhide?",
+      "a": "Unlike rawhide which is processed using harsh chemicals, bleach, and glue, Pet Buddy bully sticks are made from 100% single-ingredient, grass-fed beef pizzle. They are 100% digestible, grain-free, and safe for your dog's digestive tract."
+    },
+    {
+      "q": "What lengths are Pet Buddy bully sticks available in?",
+      "a": "We strictly produce 6-Inch and 12-Inch cuts to ensure consistent chew density, choking prevention, and uniform quality for all dog sizes."
+    },
+    {
+      "q": "Where can retail customers buy individual packs?",
+      "a": "Individual pet parents can purchase directly from our official Amazon Canada store with Prime fast shipping at https://www.amazon.ca/dp/B0H637LFT4/?th=1."
+    },
+    {
+      "q": "How can pet retailers or veterinary clinics order in bulk?",
+      "a": "Retailers and veterinary practices can click 'Get a Bulk Quote' anywhere on our website or email our wholesale operations team at infor@pet-buddy.net."
+    }
+  ]
+}

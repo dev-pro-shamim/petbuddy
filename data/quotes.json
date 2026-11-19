@@ -1,0 +1,44 @@
+[
+  {
+    "id": "RFQ-9821",
+    "date": "2026-11-19 10:15 AM",
+    "name": "Marcus Vance",
+    "business": "Paws & Whiskers Boutique",
+    "businessType": "Pet Specialty Retailer",
+    "email": "marcus@pawswhiskers.ca",
+    "phone": "+1 (416) 555-0192",
+    "product": "Pet Buddy Extra Thick Bully Sticks (6-Inch)",
+    "volume": "50 - 100 Packs / Month",
+    "location": "Toronto, ON",
+    "message": "Interested in stocking your 6-inch 6-pack and 12-pack bully sticks for our 2 retail locations in Yorkville and Leslieville.",
+    "status": "New"
+  },
+  {
+    "id": "RFQ-9818",
+    "date": "2026-11-18 04:30 PM",
+    "name": "Dr. Sarah Tremblay",
+    "business": "Maple Ridge Animal Hospital",
+    "businessType": "Veterinary Clinic",
+    "email": "stremblay@mapleridgevet.com",
+    "phone": "+1 (604) 555-8310",
+    "product": "Smoked Beef Femur Bone XL",
+    "volume": "100 - 250 Units / Quarter",
+    "location": "Vancouver, BC",
+    "message": "Looking for single-ingredient natural dental chews to recommend to dog owners post-cleaning.",
+    "status": "Contacted"
+  },
+  {
+    "id": "RFQ-9804",
+    "date": "2026-11-17 11:20 AM",
+    "name": "Jean-Luc Dubois",
+    "business": "Chien Chic Grooming & Spa",
+    "businessType": "Pet Groomer & Spa",
+    "email": "contact@chienchic.qc.ca",
+    "phone": "+1 (514) 555-7741",
+    "product": "Pet Buddy 12-Inch Jumbo Bully Sticks",
+    "volume": "250+ Packs / Month",
+    "location": "Montreal, QC",
+    "message": "Requesting distributor case pricing for 12-inch sticks and beef backstraps.",
+    "status": "Quoted"
+  }
+]

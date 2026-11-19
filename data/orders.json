@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ORD-8941",
+    "date": "2026-11-18 02:45 PM",
+    "customer": "Elena Rostova",
+    "email": "elena.r@gmail.com",
+    "items": "Pet Buddy 6-Inch Bully Sticks (Qty: 2)",
+    "total": "$59.98 CAD",
+    "status": "Amazon Fulfillment 🇨🇦"
+  },
+  {
+    "id": "ORD-8923",
+    "date": "2026-11-16 09:10 AM",
+    "customer": "David Chen",
+    "email": "dchen88@outlook.com",
+    "items": "Smoked Beef Femur Bone XL (Qty: 1)",
+    "total": "$18.99 CAD",
+    "status": "Delivered"
+  }
+]
