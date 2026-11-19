@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Pet Buddy</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Pet Buddy &raquo; Feed" href="https://pet-buddy.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Pet Buddy &raquo; Comments Feed" href="https://pet-buddy.net/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://pet-buddy.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpet-buddy.net%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://pet-buddy.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpet-buddy.net%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://pet-buddy.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.2.5' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://pet-buddy.net/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.5.2' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://pet-buddy.net/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.5.2' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://pet-buddy.net/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.5.2' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://pet-buddy.net/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.4.1' media='all' />
+<link rel='stylesheet' id='elementor-post-5-css' href='https://pet-buddy.net/wp-content/uploads/elementor/css/post-5.css?ver=1794979909' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://pet-buddy.net/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.4.1' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://pet-buddy.net/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.4.1' media='all' />
+<link rel='stylesheet' id='widget-divider-css' href='https://pet-buddy.net/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=4.4.1' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInLeft-css' href='https://pet-buddy.net/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=4.4.1' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInRight-css' href='https://pet-buddy.net/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=4.4.1' media='all' />
+<link rel='stylesheet' id='widget-counter-css' href='https://pet-buddy.net/wp-content/plugins/elementor/assets/css/widget-counter.min.css?ver=4.4.1' media='all' />
+<link rel='stylesheet' id='elementor-post-57-css' href='https://pet-buddy.net/wp-content/uploads/elementor/css/post-57.css?ver=1794980029' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-roboto-css' href="https://pet-buddy.net/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1742222625" media='all' />
+<link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href="https://pet-buddy.net/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1742222626" media='all' />
+<script id="jquery-core-js" src="https://pet-buddy.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://pet-buddy.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="https://pet-buddy.net/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://pet-buddy.net/wp-json/wp/v2/pages/57" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://pet-buddy.net/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.5" />
+<link rel="canonical" href="https://pet-buddy.net/" />
+<link rel='shortlink' href='https://pet-buddy.net/' />
+<meta name="generator" content="Elementor 4.4.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://pet-buddy.net/wp-content/uploads/2025/01/cropped-apple-icon-76x76-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://pet-buddy.net/wp-content/uploads/2025/01/cropped-apple-icon-76x76-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://pet-buddy.net/wp-content/uploads/2025/01/cropped-apple-icon-76x76-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://pet-buddy.net/wp-content/uploads/2025/01/cropped-apple-icon-76x76-1-270x270.png" />
+<style id="wp-custom-css">
+.elementor-posts .elementor-post.product.type-product {
+    height: 100%;
+}
+
+.single-product figcaption.widget-image-caption.wp-caption-text {
+    background: #fff;
+    padding-bottom: 15px;
+    padding-top: 8px;
+    font-style: normal;
+    color: #44174e;
+    font-size: 18px;
+		font-family:Roboto;
+		font-weight:600;
+}
+</style>
+</head>
+<body class="home wp-singular page-template page-template-elementor_header_footer page page-id-57 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-57">
+
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+<header id="site-header" class="site-header dynamic-header menu-dropdown-tablet">
+	<div class="header-inner">
+		<div class="site-branding show-logo">
+							<div class="site-logo show">
+					<a href="https://pet-buddy.net/" class="custom-logo-link" rel="home" aria-current="page"><img fetchpriority="high" width="1050" height="536" src="https://pet-buddy.net/wp-content/uploads/2024/11/WhatsApp_Image_2024-12-01_at_10.21.44_8cbb1efe-removebg.png" class="custom-logo" alt="Pet Buddy" decoding="async" srcset="https://pet-buddy.net/wp-content/uploads/2024/11/WhatsApp_Image_2024-12-01_at_10.21.44_8cbb1efe-removebg.png 1050w, https://pet-buddy.net/wp-content/uploads/2024/11/WhatsApp_Image_2024-12-01_at_10.21.44_8cbb1efe-removebg-300x153.png 300w, https://pet-buddy.net/wp-content/uploads/2024/11/WhatsApp_Image_2024-12-01_at_10.21.44_8cbb1efe-removebg-1024x523.png 1024w, https://pet-buddy.net/wp-content/uploads/2024/11/WhatsApp_Image_2024-12-01_at_10.21.44_8cbb1efe-removebg-768x392.png 768w" sizes="(max-width: 1050px) 100vw, 1050px" /></a>				</div>
+					</div>
+
+					<nav class="site-navigation show" aria-label="Main menu">
+				<ul id="menu-header-menu" class="menu"><li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="https://pet-buddy.net/homepage/">HOME</a></li>
+<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="https://pet-buddy.net/our-story/">OUR STORY</a></li>
+<li id="menu-item-1624" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1624"><a href="#">PRODUCTS</a>
+<ul class="sub-menu">
+	<li id="menu-item-1341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1341"><a href="https://pet-buddy.net/all-products/">ALL PRODUCTS</a></li>
+	<li id="menu-item-1614" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1614"><a href="https://pet-buddy.net/product/beef-backstrap-gullet/">Beef Backstrap &amp; Gullet</a></li>
+	<li id="menu-item-1623" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1623"><a href="https://pet-buddy.net/product/smoked-beef-femur-bone-xl/">Smoked Beef Femur Bone XL</a></li>
+	<li id="menu-item-1622" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1622"><a href="https://pet-buddy.net/product/bully-stick/">Bully Stick</a></li>
+	<li id="menu-item-1621" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1621"><a href="https://pet-buddy.net/product/duck-wing-bulk/">Duck Wing Bulk</a></li>
+	<li id="menu-item-1620" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1620"><a href="https://pet-buddy.net/product/chicken-necks-bulk/">Chicken Necks Bulk</a></li>
+	<li id="menu-item-1619" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1619"><a href="https://pet-buddy.net/product/chicken-hearts/">Chicken Hearts</a></li>
+	<li id="menu-item-1615" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1615"><a href="https://pet-buddy.net/product/beef-liver/">BEEF LIVER</a></li>
+	<li id="menu-item-1616" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1616"><a href="https://pet-buddy.net/product/beef-lung/">Beef Lung</a></li>
+	<li id="menu-item-1617" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1617"><a href="https://pet-buddy.net/product/beef-trachea/">Beef Trachea</a></li>
+</ul>
+</li>
+<li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="https://pet-buddy.net/wholesale/">WHOLESALE</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="https://pet-buddy.net/faqs/">FAQs</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a href="https://pet-buddy.net/contact-us/">CONTACT US</a></li>
+</ul>			</nav>
+							<div class="site-navigation-toggle-holder show">
+				<button type="button" class="site-navigation-toggle" aria-expanded="false" aria-label="Menu">
+					<span class="site-navigation-toggle-icon" aria-hidden="true"></span>
+				</button>
+			</div>
+			<nav class="site-navigation-dropdown show" aria-label="Mobile menu" aria-hidden="true" inert>
+				<ul id="menu-header-menu-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="https://pet-buddy.net/homepage/">HOME</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="https://pet-buddy.net/our-story/">OUR STORY</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1624"><a href="#">PRODUCTS</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1341"><a href="https://pet-buddy.net/all-products/">ALL PRODUCTS</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1614"><a href="https://pet-buddy.net/product/beef-backstrap-gullet/">Beef Backstrap &amp; Gullet</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1623"><a href="https://pet-buddy.net/product/smoked-beef-femur-bone-xl/">Smoked Beef Femur Bone XL</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1622"><a href="https://pet-buddy.net/product/bully-stick/">Bully Stick</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1621"><a href="https://pet-buddy.net/product/duck-wing-bulk/">Duck Wing Bulk</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1620"><a href="https://pet-buddy.net/product/chicken-necks-bulk/">Chicken Necks Bulk</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1619"><a href="https://pet-buddy.net/product/chicken-hearts/">Chicken Hearts</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1615"><a href="https://pet-buddy.net/product/beef-liver/">BEEF LIVER</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1616"><a href="https://pet-buddy.net/product/beef-lung/">Beef Lung</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1617"><a href="https://pet-buddy.net/product/beef-trachea/">Beef Trachea</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="https://pet-buddy.net/wholesale/">WHOLESALE</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="https://pet-buddy.net/faqs/">FAQs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a href="https://pet-buddy.net/contact-us/">CONTACT US</a></li>
+</ul>			</nav>
+			</div>
+</header>
+		<div data-elementor-type="wp-page" data-elementor-id="57" class="elementor elementor-57">
+				<div class="elementor-element elementor-element-1620dcb e-con-full e-flex e-con e-parent" data-id="1620dcb" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-922e1b8 elementor-widget elementor-widget-nested-carousel" data-id="922e1b8" data-element_type="widget" data-e-type="widget" data-widget_type="nested-carousel.default">
+				<div class="elementor-widget-container">
+					 				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1116528 e-flex e-con-boxed e-con e-parent" data-id="1116528" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1114593 elementor-widget elementor-widget-heading" data-id="1114593" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">ABOUT PRODUCTS</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-682e80f elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="682e80f" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-4cd3c71 e-grid e-con-full e-con e-child" data-id="4cd3c71" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-30c2606 e-grid e-con-full elementor-invisible e-con e-child" data-id="30c2606" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+				<div class="elementor-element elementor-element-0178dc7 elementor-widget elementor-widget-image" data-id="0178dc7" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__4_-removebg-preview.png" data-elementor-open-lightbox="yes" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTgyMiwidXJsIjoiaHR0cHM6XC9cL3BldC1idWRkeS5uZXRcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAyXC9VbnRpdGxlZF9kZXNpZ25fXzRfLXJlbW92ZWJnLXByZXZpZXcucG5nIn0%3D">
+							<img decoding="async" width="465" height="537" src="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__4_-removebg-preview.png" class="attachment-full size-full wp-image-1822" alt="" srcset="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__4_-removebg-preview.png 465w, https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__4_-removebg-preview-260x300.png 260w" sizes="(max-width: 465px) 100vw, 465px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-fd52ed9 e-con-full e-flex e-con e-child" data-id="fd52ed9" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ac9f08a elementor-widget elementor-widget-heading" data-id="ac9f08a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Delicious Bites Your Dog Craves</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-92e65f8 font elementor-widget elementor-widget-text-editor" data-id="92e65f8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>&#8220;Your pup deserves the best! Our irresistible Paw-some Treats are crafted with care using high-quality ingredients, making them the ideal bite-sized rewards for training or treating. Your furry friend will love every bite and beg for more</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-cd10f9d e-grid e-con-full elementor-invisible e-con e-child" data-id="cd10f9d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+				<div class="elementor-element elementor-element-e296773 elementor-widget elementor-widget-image" data-id="e296773" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__3_-removebg-preview-1.png" data-elementor-open-lightbox="yes" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTgyNiwidXJsIjoiaHR0cHM6XC9cL3BldC1idWRkeS5uZXRcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAyXC9VbnRpdGxlZF9kZXNpZ25fXzNfLXJlbW92ZWJnLXByZXZpZXctMS5wbmcifQ%3D%3D">
+							<img decoding="async" width="465" height="537" src="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__3_-removebg-preview-1.png" class="attachment-full size-full wp-image-1826" alt="" srcset="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__3_-removebg-preview-1.png 465w, https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__3_-removebg-preview-1-260x300.png 260w" sizes="(max-width: 465px) 100vw, 465px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-1ac6166 e-con-full e-flex e-con e-child" data-id="1ac6166" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5e57674 elementor-widget elementor-widget-heading" data-id="5e57674" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Tail-Wagging Treats: Pure Joy in Every Bite!</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1d1914b elementor-widget elementor-widget-text-editor" data-id="1d1914b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Bring pure happiness to your dog with our irresistible, tail-wagging treats! Crafted with 100% natural ingredients, these treats are the ultimate way to show your furry friend how much you care.</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b61b582 e-grid e-con-full elementor-invisible e-con e-child" data-id="b61b582" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+				<div class="elementor-element elementor-element-c424ecb elementor-widget elementor-widget-image" data-id="c424ecb" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__3_-removebg-preview.png" data-elementor-open-lightbox="yes" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTgyMCwidXJsIjoiaHR0cHM6XC9cL3BldC1idWRkeS5uZXRcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAyXC9VbnRpdGxlZF9kZXNpZ25fXzNfLXJlbW92ZWJnLXByZXZpZXcucG5nIn0%3D">
+							<img loading="lazy" decoding="async" width="465" height="537" src="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__3_-removebg-preview.png" class="attachment-full size-full wp-image-1820" alt="" srcset="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__3_-removebg-preview.png 465w, https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__3_-removebg-preview-260x300.png 260w" sizes="(max-width: 465px) 100vw, 465px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-92b6fdc e-con-full e-flex e-con e-child" data-id="92b6fdc" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5bba3a1 elementor-widget elementor-widget-heading" data-id="5bba3a1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Tail-Wagging Treats: Pure Joy in Every Bite!</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-89adc68 elementor-widget elementor-widget-text-editor" data-id="89adc68" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Bring pure happiness to your dog with our irresistible, tail-wagging treats! Crafted with 100% natural ingredients, these treats are the ultimate way to show your furry friend how much you care.</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7ca50dc e-grid e-con-full elementor-invisible e-con e-child" data-id="7ca50dc" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+				<div class="elementor-element elementor-element-62906dd elementor-widget elementor-widget-image" data-id="62906dd" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__1_-removebg-preview-1.png" data-elementor-open-lightbox="yes" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTgyNCwidXJsIjoiaHR0cHM6XC9cL3BldC1idWRkeS5uZXRcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAyXC9VbnRpdGxlZF9kZXNpZ25fXzFfLXJlbW92ZWJnLXByZXZpZXctMS5wbmcifQ%3D%3D">
+							<img loading="lazy" decoding="async" width="465" height="537" src="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__1_-removebg-preview-1.png" class="attachment-full size-full wp-image-1824" alt="" srcset="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__1_-removebg-preview-1.png 465w, https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__1_-removebg-preview-1-260x300.png 260w" sizes="(max-width: 465px) 100vw, 465px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-414a58b e-con-full e-flex e-con e-child" data-id="414a58b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-59c3b8f elementor-widget elementor-widget-heading" data-id="59c3b8f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Bark Bites: Little Treats, Big Rewards</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-749cb6d elementor-widget elementor-widget-text-editor" data-id="749cb6d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>These delightful treats pack a flavorful punch! Bark Bites are ideal for training sessions or rewarding your dog without the worry of overindulgence.</p><p> </p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-764a48f e-grid e-con-full elementor-invisible e-con e-child" data-id="764a48f" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+				<div class="elementor-element elementor-element-2de16ba elementor-widget elementor-widget-image" data-id="2de16ba" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design-removebg-preview.png" data-elementor-open-lightbox="yes" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTgyNSwidXJsIjoiaHR0cHM6XC9cL3BldC1idWRkeS5uZXRcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAyXC9VbnRpdGxlZF9kZXNpZ24tcmVtb3ZlYmctcHJldmlldy5wbmcifQ%3D%3D">
+							<img loading="lazy" decoding="async" width="465" height="537" src="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design-removebg-preview.png" class="attachment-full size-full wp-image-1825" alt="" srcset="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design-removebg-preview.png 465w, https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design-removebg-preview-260x300.png 260w" sizes="(max-width: 465px) 100vw, 465px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-dfbbc70 e-con-full e-flex e-con e-child" data-id="dfbbc70" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-dd7e165 elementor-widget elementor-widget-heading" data-id="dd7e165" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Bone Appétit: Tasty Treats Your Dog Will Love!</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2b21d85 elementor-widget elementor-widget-text-editor" data-id="2b21d85" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Give your dog a delightful and wholesome treat with our premium bones. Bursting with irresistible flavor.</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-eb875dd e-grid e-con-full elementor-invisible e-con e-child" data-id="eb875dd" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
+				<div class="elementor-element elementor-element-19dc21b elementor-widget elementor-widget-image" data-id="19dc21b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__2_-removebg-preview-1.png" data-elementor-open-lightbox="yes" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTgyMywidXJsIjoiaHR0cHM6XC9cL3BldC1idWRkeS5uZXRcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAyXC9VbnRpdGxlZF9kZXNpZ25fXzJfLXJlbW92ZWJnLXByZXZpZXctMS5wbmcifQ%3D%3D">
+							<img loading="lazy" decoding="async" width="465" height="537" src="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__2_-removebg-preview-1.png" class="attachment-full size-full wp-image-1823" alt="" srcset="https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__2_-removebg-preview-1.png 465w, https://pet-buddy.net/wp-content/uploads/2025/02/Untitled_design__2_-removebg-preview-1-260x300.png 260w" sizes="(max-width: 465px) 100vw, 465px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-4ade4b7 e-con-full e-flex e-con e-child" data-id="4ade4b7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-85cb43a elementor-widget elementor-widget-heading" data-id="85cb43a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Chew On This: The Ultimate Chewables for Dogs</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c0ee541 elementor-widget elementor-widget-text-editor" data-id="c0ee541" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Satisfy your dog’s natural chewing instincts with our premium chewables. These durable, long-lasting treats are crafted to keep your furry friend entertained and happily engaged for hours.</p>								</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5cdf5a8 e-flex e-con-boxed e-con e-parent" data-id="5cdf5a8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-00a0341 elementor-widget elementor-widget-heading" data-id="00a0341" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">SOME OF OUR CUSTOMERS FAVOURITES
+</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-fa177c7 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="fa177c7" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-75be34a e-flex e-con-boxed e-con e-parent" data-id="75be34a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-53ea9e9 e-grid e-con-full e-con e-child" data-id="53ea9e9" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-e85ab6d e-con-full e-flex e-con e-child" data-id="e85ab6d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-29ef0db elementor-widget elementor-widget-image" data-id="29ef0db" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="75" height="75" src="https://pet-buddy.net/wp-content/uploads/2024/12/fav1.png" class="attachment-medium size-medium wp-image-206" alt="" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-925d00f elementor-widget__width-initial elementor-widget elementor-widget-counter" data-id="925d00f" data-element_type="widget" data-e-type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+						<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="50" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-cee6ad2 elementor-widget elementor-widget-heading" data-id="cee6ad2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">STORE'S SELL OUR PRODUCTS</h5>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-03562c8 e-con-full e-flex e-con e-child" data-id="03562c8" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0029bb6 elementor-widget elementor-widget-image" data-id="0029bb6" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="75" height="75" src="https://pet-buddy.net/wp-content/uploads/2024/12/fav2.png" class="attachment-medium size-medium wp-image-207" alt="" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-e6f1f7c elementor-widget__width-initial elementor-widget elementor-widget-counter" data-id="e6f1f7c" data-element_type="widget" data-e-type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+						<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="1000" data-to-value="5" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0f196bf elementor-widget elementor-widget-heading" data-id="0f196bf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">YEARS OF EXPERIENCE</h5>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1a95841 e-con-full e-flex e-con e-child" data-id="1a95841" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9e6b313 elementor-widget elementor-widget-image" data-id="9e6b313" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="75" height="75" src="https://pet-buddy.net/wp-content/uploads/2024/12/fav3.png" class="attachment-medium size-medium wp-image-208" alt="" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-6b9a5fd elementor-widget__width-initial elementor-widget elementor-widget-counter" data-id="6b9a5fd" data-element_type="widget" data-e-type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+						<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="20" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-57ef1f4 elementor-widget elementor-widget-heading" data-id="57ef1f4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">PRODUCTS</h5>				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-66683f1 e-flex e-con-boxed e-con e-parent" data-id="66683f1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-acfdde2 elementor-widget elementor-widget-heading" data-id="acfdde2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">ABOUT OUR SERVICES</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-019093c elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="019093c" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-6b1f220 e-grid e-con-full e-con e-child" data-id="6b1f220" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-20b057c e-grid e-con-full e-con e-child" data-id="20b057c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-cf08671 elementor-widget elementor-widget-image" data-id="cf08671" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="300" height="300" src="https://pet-buddy.net/wp-content/uploads/2024/12/30688416-removebg-preview-300x300.png" class="attachment-medium size-medium wp-image-273" alt="" srcset="https://pet-buddy.net/wp-content/uploads/2024/12/30688416-removebg-preview-300x300.png 300w, https://pet-buddy.net/wp-content/uploads/2024/12/30688416-removebg-preview-150x150.png 150w, https://pet-buddy.net/wp-content/uploads/2024/12/30688416-removebg-preview.png 500w" sizes="(max-width: 300px) 100vw, 300px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-7b53e10 e-con-full e-flex e-con e-child" data-id="7b53e10" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-dc72f95 elementor-widget elementor-widget-heading" data-id="dc72f95" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Wide Selection of Premium Pet Food</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c6278e3 elementor-widget elementor-widget-text-editor" data-id="c6278e3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>We provide a diverse selection of premium pet food crafted to cater to the unique needs of pets, including dogs, cats, birds, and small animals. Whether you&#8217;re seeking dry food, wet food, raw diets, or specialized dietary options (grain-free, organic, hypoallergenic, and more), we have everything you need</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-01599cf e-grid e-con-full e-con e-child" data-id="01599cf" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-6ba8432 elementor-widget elementor-widget-image" data-id="6ba8432" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="360" height="360" src="https://pet-buddy.net/wp-content/uploads/2024/12/help-removebg-preview.png" class="attachment-large size-large wp-image-275" alt="" srcset="https://pet-buddy.net/wp-content/uploads/2024/12/help-removebg-preview.png 360w, https://pet-buddy.net/wp-content/uploads/2024/12/help-removebg-preview-300x300.png 300w, https://pet-buddy.net/wp-content/uploads/2024/12/help-removebg-preview-150x150.png 150w" sizes="(max-width: 360px) 100vw, 360px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-e533831 e-con-full e-flex e-con e-child" data-id="e533831" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2944774 elementor-widget elementor-widget-heading" data-id="2944774" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Fresh &amp; Natural Chews</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6a13dd4 elementor-widget elementor-widget-text-editor" data-id="6a13dd4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Our premium chews and bully sticks are made with 100% natural ingredients, carefully sourced for the highest quality. Whether your dog is an avid chewer or simply enjoys a flavorful treat, we offer a variety that will keep them entertained while supporting dental health and strong gums.</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ee03723 e-grid e-con-full e-con e-child" data-id="ee03723" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-ac1d57b elementor-widget elementor-widget-image" data-id="ac1d57b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="300" height="285" src="https://pet-buddy.net/wp-content/uploads/2024/12/star-removebg-preview.png" class="attachment-large size-large wp-image-274" alt="" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-1ddeccb e-con-full e-flex e-con e-child" data-id="1ddeccb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a254542 elementor-widget elementor-widget-heading" data-id="a254542" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Delivery Service for Your Convenience</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0784cf7 elementor-widget elementor-widget-text-editor" data-id="0784cf7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>We know life can be hectic, so we provide convenient home delivery services to simplify your pet food shopping! Just place your order online or by phone, and we’ll deliver your pet’s necessities directly to your doorstep—quickly and at no cost for local deliveries within a specified radius.</p><p> </p>								</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fbed03a e-flex e-con-boxed e-con e-parent" data-id="fbed03a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-23c4f9e elementor-widget elementor-widget-nested-carousel" data-id="23c4f9e" data-element_type="widget" data-e-type="widget" data-widget_type="nested-carousel.default">
+				<div class="elementor-widget-container">
+					 				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-70c8bdf e-flex e-con-boxed e-con e-parent" data-id="70c8bdf" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4ea7f7e elementor-widget elementor-widget-heading" data-id="4ea7f7e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">MEET SOME HAPPY CUSTOMERS</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-820f2ff elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="820f2ff" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-797cecb e-con-full e-flex e-con e-child" data-id="797cecb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-fbdf119 e-transform e-transform elementor-widget elementor-widget-reviews" data-id="fbdf119" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_translateX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;_transform_skewX_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_skewX_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_skewX_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_skewY_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_skewY_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_skewY_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="reviews.default">
+				<div class="elementor-widget-container">
+					 				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f8572b4 e-flex e-con-boxed e-con e-parent" data-id="f8572b4" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-5c448ec e-con-full e-flex e-con e-child" data-id="5c448ec" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c364b6a elementor-widget elementor-widget-html" data-id="c364b6a" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div style="position: absolute; left: -7566px;"><p><a href="https://casinotest2.com/">test2</a></p></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-077db73 e-con-full e-flex e-con e-child" data-id="077db73" data-element_type="container" data-e-type="container">
+				</div>
+					</div>
+				</div>
+				</div>
+		<footer id="site-footer" class="site-footer dynamic-footer footer-has-copyright">
+	<div class="footer-inner">
+		<div class="site-branding show-logo">
+							<div class="site-logo show">
+					<a href="https://pet-buddy.net/" class="custom-logo-link" rel="home" aria-current="page"><img width="1050" height="536" src="https://pet-buddy.net/wp-content/uploads/2024/11/WhatsApp_Image_2024-12-01_at_10.21.44_8cbb1efe-removebg.png" class="custom-logo" alt="Pet Buddy" decoding="async" srcset="https://pet-buddy.net/wp-content/uploads/2024/11/WhatsApp_Image_2024-12-01_at_10.21.44_8cbb1efe-removebg.png 1050w, https://pet-buddy.net/wp-content/uploads/2024/11/WhatsApp_Image_2024-12-01_at_10.21.44_8cbb1efe-removebg-300x153.png 300w, https://pet-buddy.net/wp-content/uploads/2024/11/WhatsApp_Image_2024-12-01_at_10.21.44_8cbb1efe-removebg-1024x523.png 1024w, https://pet-buddy.net/wp-content/uploads/2024/11/WhatsApp_Image_2024-12-01_at_10.21.44_8cbb1efe-removebg-768x392.png 768w" sizes="(max-width: 1050px) 100vw, 1050px" /></a>				</div>
+					</div>
+
+		
+					<div class="copyright show">
+				<p>All rights reserved</p>
+			</div>
+			</div>
+</footer>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+			<script id="wp-hooks-js" src="https://pet-buddy.net/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://pet-buddy.net/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://pet-buddy.net/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.2.5"></script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/pet-buddy.net\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://pet-buddy.net/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.2.5"></script>
+<script id="hello-theme-frontend-js" src="https://pet-buddy.net/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.5.2"></script>
+<script id="elementor-webpack-runtime-js" src="https://pet-buddy.net/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.4.1"></script>
+<script id="elementor-frontend-modules-js" src="https://pet-buddy.net/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.4.1"></script>
+<script id="jquery-ui-core-js-before">
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+</script>
+<script id="jquery-ui-core-js" src="https://pet-buddy.net/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.4.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"hello-theme-header-footer":true,"e_mcp_revision_snapshots":true,"nested-elements":true,"import-export-customization":true},"urls":{"assets":"https:\/\/pet-buddy.net\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/pet-buddy.net\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/pet-buddy.net\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"44be352a49","atomicFormsSendForm":"e6ed749df1"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"lightbox_title_src":"caption","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":57,"title":"Pet%20Buddy","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="https://pet-buddy.net/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.4.1"></script>
+<script id="jquery-numerator-js" src="https://pet-buddy.net/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://pet-buddy.net/wp-includes/js/wp-emoji-release.min.js?ver=7.1.5"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://pet-buddy.net/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"0911b655b08d419789d685094c49e5af","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

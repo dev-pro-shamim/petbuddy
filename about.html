@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story | Pet Buddy</title>
+  <meta name="description" content="Discover the story behind PetBuddy. We are committed to ensuring pets have everything they need to thrive through natural treats, healthy chews, and loving care.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pb: {
+              navy: '#002D62',
+              'navy-dark': '#071E3D',
+              'navy-light': '#0B3E7A',
+              orange: '#F58220',
+              'orange-dark': '#D9690D',
+              gold: '#FFB800'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Montserrat"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Official Pet Buddy Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/pet-buddy-logo.png">
+  <link rel="apple-touch-icon" href="assets/images/pet-buddy-logo.png">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- TOP PROMO ANNOUNCEMENT BAR -->
+  <div class="bg-[#C8102E] text-white text-[11px] sm:text-xs py-2 px-4 text-center font-bold tracking-wide flex items-center justify-center gap-2 relative z-40 border-b border-[#A60D24] overflow-hidden">
+  <div class="flex items-center gap-2.5 sm:gap-4 flex-wrap justify-center">
+    <span>🍁 CANADIAN OWNED & OPERATED</span>
+    <span class="hidden md:inline">•</span>
+    <span class="bg-white/20 text-white px-2 py-0.5 rounded font-black">OFFICIAL AMAZON SELLER</span>
+    <span class="hidden sm:inline">•</span>
+    <span>100% ALL-NATURAL SINGLE INGREDIENT CHEWS (6" & 12")</span>
+    <span class="hidden lg:inline">•</span>
+    <a href="https://www.amazon.ca/dp/B0H637LFT4/?th=1" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-200 font-extrabold flex items-center gap-1">
+      <span>Shop Amazon Prime Store &rarr;</span>
+    </a>
+    <span class="hidden xl:inline">•</span>
+    <span class="hidden xl:inline">Wholesale: <a href="mailto:infor@pet-buddy.net" class="underline font-bold">infor@pet-buddy.net</a></span>
+  </div>
+</div>
+
+    <!-- STICKY HEADER -->
+  <header class="sticky top-0 bg-white border-b border-slate-200 z-30 shadow-sm transition-shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Row: Large Logo, Search, Amazon Store Button, Wholesale Quote -->
+      <div class="flex items-center justify-between h-24 sm:h-28 gap-4">
+        
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-[#0F172A] rounded-xl hover:bg-slate-100" aria-label="Open Navigation Menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+
+        <!-- OFFICIAL PET BUDDY LOGO (BIGGER & PROMINENT) -->
+        <a href="index.html" class="flex items-center flex-shrink-0 group py-1">
+          <img src="assets/images/pet-buddy-logo.png" alt="Pet Buddy" class="h-16 sm:h-20 md:h-24 w-auto object-contain transition-transform duration-200 group-hover:scale-105">
+        </a>
+
+        <!-- SEARCH BAR (Desktop) -->
+        <div class="hidden md:flex flex-1 max-w-md mx-4 lg:mx-8 relative">
+          <form class="w-full relative" onsubmit="event.preventDefault(); window.location.href='shop.html?search='+encodeURIComponent(this.querySelector('input').value)">
+            <input 
+              type="text" 
+              placeholder="Search 6-inch or 12-inch extra thick bully sticks..." 
+              class="header-search-input w-full bg-slate-50 border border-slate-300 rounded-full py-2.5 pl-11 pr-4 text-xs focus:outline-none focus:border-[#C8102E] focus:bg-white transition-all text-slate-900 placeholder-slate-400">
+            <svg class="w-4 h-4 text-slate-400 absolute left-4 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <div class="search-results-dropdown hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-50"></div>
+          </form>
+        </div>
+
+        <!-- RIGHT HEADER: Amazon Prime Pill & Wholesale Request Button -->
+        <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+          
+          <!-- Official Amazon Store Button -->
+          <a 
+            href="https://www.amazon.ca/dp/B0H637LFT4/?th=1" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="flex items-center gap-2 bg-[#FF9900] hover:bg-[#E88B00] text-slate-950 px-4 py-2.5 rounded-full text-xs font-black transition-all shadow-sm whitespace-nowrap">
+            <svg class="w-4 h-4 fill-current hidden sm:inline" viewBox="0 0 24 24"><path d="M15.42 18.06c-3.14 2.31-7.7 3.52-11.64 1.48-.56-.29-1.07-.65-1.53-1.07-.2-.18-.03-.43.21-.31 3.52 1.77 7.9 2.22 11.65-.12.44-.28.89.2.46.52l.85-.5zm1.5-1.1c-.24-.31-.86-.5-1.35-.38-.28.07-.37.28-.2.49.52.66 1.34 1.14 2.21 1.25.32.04.54-.15.42-.4-.28-.59-.72-.75-1.08-.96zM13.43 14.2c-.37-.48-.68-1.09-.68-1.84 0-1.81 1.38-2.67 3.03-2.67.62 0 1.05.07 1.49.19v-.36c0-.98-.65-1.54-1.74-1.54-.86 0-1.79.29-2.45.69-.17.1-.38-.02-.34-.23.15-.72.48-1.51.52-1.63.04-.12.18-.18.32-.24.77-.33 1.95-.57 3.1-.57 2.28 0 3.86 1.15 3.86 3.65v4.29c0 .54.04 1.09.24 1.57.06.14-.04.28-.18.28-.35 0-1.12-.13-1.42-.48-.09-.1-.13-.26-.15-.42-.51.68-1.4 1.17-2.6 1.17-1.49 0-2.66-.75-3.08-1.7z"/></svg>
+            <span>Buy on Amazon</span>
+          </a>
+
+          <!-- Bulk / Wholesale Quote Modal Trigger -->
+          <button 
+            onclick="openBulkQuoteModal()" 
+            class="bg-[#0F172A] hover:bg-slate-800 text-white px-4 py-2.5 rounded-full text-xs font-black transition-all flex items-center gap-1.5 shadow-sm whitespace-nowrap">
+            <span>Get Bulk Quote</span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- DESKTOP PRIMARY NAVIGATION (UNBREAKABLE: NO WRAP, PREVENTS BREAKING) -->
+      <nav class="hidden lg:flex items-center justify-between border-t border-slate-100 py-3 text-xs uppercase tracking-wider font-extrabold text-[#0F172A] flex-nowrap overflow-x-auto no-scrollbar">
+        <div class="flex items-center space-x-6 xl:space-x-8 flex-nowrap flex-shrink-0">
+          <a href="shop.html" class="hover:text-[#C8102E] transition-colors whitespace-nowrap">Shop All (14)</a>
+          <a href="shop.html?search=6-inch" class="hover:text-[#C8102E] text-[#C8102E] transition-colors whitespace-nowrap">6-Inch Bully Sticks</a>
+          <a href="shop.html?search=12-inch" class="hover:text-[#C8102E] transition-colors whitespace-nowrap">12-Inch Monster Sticks</a>
+          <a href="category.html?cat=chews-bones" class="hover:text-[#C8102E] transition-colors whitespace-nowrap">Bones &amp; Chews</a>
+          <a href="category.html?cat=treats" class="hover:text-[#C8102E] transition-colors whitespace-nowrap">Natural Dog Treats</a>
+          <button onclick="openChewQuiz()" class="hover:text-[#C8102E] text-slate-700 transition-colors uppercase font-bold whitespace-nowrap">Chew Finder Quiz 🐾</button>
+        </div>
+        <div class="flex items-center space-x-6 normal-case font-semibold flex-nowrap flex-shrink-0 pl-4">
+          <a href="https://www.amazon.ca/dp/B0H637LFT4/?th=1" target="_blank" rel="noopener noreferrer" class="text-amber-700 font-extrabold hover:underline flex items-center gap-1 whitespace-nowrap">
+            <span>🇨🇦 Amazon Canada Store</span>
+          </a>
+          <button onclick="openBulkQuoteModal()" class="text-[#C8102E] font-black hover:underline whitespace-nowrap">
+            Request Wholesale Quote &rarr;
+          </button>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ABOUT HERO (From pet-buddy.net) -->
+  <section class="bg-gradient-to-b from-blue-50 via-white to-slate-50 py-16 sm:py-24 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-4">
+      <span class="text-xs font-black text-[#C8102E] uppercase tracking-widest">Welcome to PetBuddy</span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-black text-[#0F172A] leading-tight">
+        Pets Aren't Just Animals—They Are Family.
+      </h1>
+      <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        They fill our lives with happiness, loyalty, and love, and we’re committed to giving back by ensuring they have everything they need to thrive.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENT BLOCKS (Direct from pet-buddy.net Our Story) -->
+  <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+    
+    <!-- Block 1: About Our Company -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+      <div class="md:col-span-6 space-y-4">
+        <span class="text-xs font-black text-[#C8102E] uppercase tracking-wider">About Our Company</span>
+        <h2 class="text-3xl font-heading font-black text-[#0F172A]">Our Journey & Vision</h2>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Our journey started with a group of passionate pet lovers united by a common goal: transforming how pets are cared for. We each brought a unique connection to our furry, feathered, or fluffy companions—whether cats, dogs, birds, or bunnies. Together, we shared one mission: to ensure pets have everything they need to thrive and live their best lives. This shared vision gave life to PetBuddy.
+        </p>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          At PetBuddy, we believe pets are much more than animals—they are cherished companions, loyal friends, and beloved family members. We care for every pet with the same love and dedication we give our own.
+        </p>
+      </div>
+      <div class="md:col-span-6 rounded-3xl overflow-hidden shadow-xl aspect-[4/3]">
+        <img src="http://pet-buddy.net/wp-content/uploads/2025/02/BenefitsofFreshDogFood-e1740046710187.jpg" alt="Pet Buddy Natural Dog Care" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Block 2: Who We Support -->
+    <div class="space-y-8">
+      <div class="text-center max-w-xl mx-auto space-y-2">
+        <span class="text-xs font-black text-[#C8102E] uppercase tracking-widest">Our Community</span>
+        <h2 class="text-3xl font-heading font-black text-[#0F172A]">Who We Support</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
+          <div class="text-3xl mb-2">🐾</div>
+          <h3 class="font-heading font-black text-base text-[#0F172A]">Pets of All Kinds</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Our top priority is supporting our furry, scaly, and feathered friends with wholesome, bio-appropriate nutrition and high-durability natural chews.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
+          <div class="text-3xl mb-2">💼</div>
+          <h3 class="font-heading font-black text-base text-[#0F172A]">Busy Professionals</h3>
+          <p class="text-slate-600 leading-relaxed">
+            We help busy professionals who love their pets but need convenient delivery options and subscription peace-of-mind so their dogs never run out of chews.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-2">
+          <div class="text-3xl mb-2">❤️</div>
+          <h3 class="font-heading font-black text-base text-[#0F172A]">Elderly Pet Parents</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Caring for a pet poses unique challenges for seniors. We make pet care simple with direct home delivery, pre-portioned bags, and attentive customer service.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 3: Wholesale Partnership (From pet-buddy.net/wholesale/) -->
+    <div id="wholesale" class="bg-[#0F172A] text-white p-8 sm:p-12 rounded-3xl shadow-xl space-y-6 border border-[#0B3E7A]">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8 space-y-3">
+          <span class="bg-[#F58220] text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Partner with Us</span>
+          <h2 class="text-3xl font-heading font-black text-white">PetBuddy Wholesale Solutions</h2>
+          <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+            At PetBuddy, we know that pet businesses, stores, groomers, and veterinarians require top-quality products that pets and their owners can rely on. That’s why we provide wholesale bulk bully sticks, whole duck wings, chicken treats, and smoked bones at competitive prices with private label options available.
+          </p>
+        </div>
+        <div class="lg:col-span-4 flex justify-start lg:justify-end">
+          <a href="contact.html?topic=wholesale" class="bg-[#C8102E] hover:bg-[#A60D24] text-white font-extrabold text-sm py-4 px-6 rounded-xl shadow-lg transition-all text-center">
+            Apply for Wholesale Account &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- SIGNATURE PET BUDDY FOOTER -->
+  <footer class="bg-[#0F172A] text-slate-300 pt-14 pb-10 border-t border-[#C8102E]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-white/10 text-xs">
+        
+        <div class="lg:col-span-2 space-y-3">
+          <div class="flex items-center gap-2">
+            <img src="assets/images/pet-buddy-logo.png" alt="Pet Buddy" class="h-12 sm:h-14 w-auto object-contain">
+            
+          </div>
+          <p class="text-slate-400 leading-relaxed max-w-sm">
+            At PetBuddy, pets aren’t just animals—they are cherished companions, loyal friends, and beloved family members. Offering 100% natural bully sticks, chews, and premium pet provisions.
+          </p>
+          <div class="text-slate-300 space-y-1">
+            <div>📍 <strong>4 Alrita Cres, Toronto, ON, M1R 4M3, Canada</strong></div>
+            <div>📞 Phone: <strong>+1 (306) 260-4467</strong> / <strong>+1 (613) 416-6335</strong></div>
+            <div>✉️ Email: <strong>infor@pet-buddy.net</strong></div>
+            <div>🕒 Hours: Monday to Friday: 9am – 5pm EST</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Shop Provisions</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="shop.html" class="hover:text-white">Shop All Chews</a></li>
+            <li><a href="category.html?cat=bully-sticks" class="hover:text-white">Bully Sticks (6" &amp; 12")</a></li>
+            <li><a href="category.html?cat=chews-bones" class="hover:text-white">Smoked Femur Bones & Tracheas</a></li>
+            <li><a href="category.html?cat=treats" class="hover:text-white">Duck Wings & Chicken Hearts</a></li>
+            <li><a href="category.html?cat=bundles" class="hover:text-white">Variety Tasting Bundles</a></li>
+            <li><a href="shop.html?filter=subscribe" class="hover:text-[#C8102E] text-[#C8102E] font-bold">Autoship & Save 15%</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Customer Care</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="account.html" class="hover:text-white">My Account</a></li>
+            <li><a href="order-tracking.html" class="hover:text-white">Track Order</a></li>
+            <li><a href="wishlist.html" class="hover:text-white">Saved Wishlist</a></li>
+            <li><a href="faq.html" class="hover:text-white">Chew Guide & FAQ</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Wholesale & Story</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="about.html" class="hover:text-white font-bold text-[#C8102E]">Our Story</a></li>
+            <li><a href="about.html#wholesale" class="hover:text-white">Buy Wholesale</a></li>
+            <li><a href="faq.html#shipping" class="hover:text-white">Shipping & Delivery</a></li>
+            <li><a href="contact.html" class="hover:text-white">Retail Inquiries</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+        <div>&copy; 2026 Pet Buddy. All Rights Reserved.</div>
+        <div class="flex items-center gap-3">
+          <span>🇨🇦 Sourced & Distributed with Pride</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

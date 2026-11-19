@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Checkout | Pet Buddy</title>
+  <meta name="description" content="Secure checkout for Pet Buddy all-natural dog chews and wholesale pet provisions.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bbs: {
+              navy: '#002D62',
+              'navy-dark': '#071E3D',
+              'navy-light': '#0B3E7A',
+              orange: '#F58220',
+              'orange-dark': '#D9690D',
+              gold: '#FFB800'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Montserrat"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Official Pet Buddy Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/pet-buddy-logo.png">
+  <link rel="apple-touch-icon" href="assets/images/pet-buddy-logo.png">
+</head>
+<body class="bg-slate-100/70 text-slate-800 min-h-screen flex flex-col">
+
+  <!-- MINIMAL CHECKOUT HEADER -->
+  <header class="bg-white border-b border-slate-200 py-4">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="index.html" class="flex items-center flex-shrink-0 group">
+  <img src="assets/images/pet-buddy-logo.png" alt="Pet Buddy" class="h-12 sm:h-14 w-auto object-contain">
+</a>
+      <a href="cart.html" class="text-xs font-bold text-[#0F172A] hover:underline flex items-center gap-1">
+        <span>&larr; Return to Cart</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CHECKOUT 2-COLUMN VIEW -->
+  <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 w-full">
+    
+    <div id="checkout-empty-warning" class="bg-white p-12 rounded-2xl border border-slate-200 text-center max-w-md mx-auto shadow-sm hidden">
+      <div class="text-5xl mb-4">🛒</div>
+      <h3 class="font-heading font-black text-xl text-[#0F172A] mb-2">Your Cart is Empty</h3>
+      <p class="text-xs text-slate-600 mb-6">Add delicious treats or chews to your cart before proceeding to checkout.</p>
+      <a href="shop.html" class="bg-[#F58220] text-white font-bold text-xs py-3 px-6 rounded-xl inline-block">
+        Return to Shop
+      </a>
+    </div>
+
+    <!-- Active Checkout Form -->
+    <form id="main-checkout-form" onsubmit="handlePlaceOrder(event)" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- LEFT COLUMN -->
+      <div class="lg:col-span-7 space-y-6">
+        
+        <!-- Contact Information -->
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center justify-between">
+            <h2 class="font-heading font-bold text-base text-[#0F172A] flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-blue-100 text-[#0F172A] text-xs flex items-center justify-center font-bold">1</span>
+              Customer Contact Information
+            </h2>
+            <a href="login.html" class="text-xs text-[#C8102E] font-bold hover:underline">Log In</a>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div class="sm:col-span-2">
+              <label class="block font-bold text-slate-700 mb-1">Email Address (for order tracking)</label>
+              <input type="email" id="checkout-email" required placeholder="alex@example.com" value="alex.morgan@pet-buddy.net" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 focus:outline-none focus:border-[#C8102E]">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">First Name</label>
+              <input type="text" id="checkout-fname" required placeholder="Alex" value="Alex" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 focus:outline-none focus:border-[#C8102E]">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Last Name</label>
+              <input type="text" id="checkout-lname" required placeholder="Morgan" value="Morgan" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 focus:outline-none focus:border-[#C8102E]">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block font-bold text-slate-700 mb-1">Phone Number</label>
+              <input type="tel" id="checkout-phone" required placeholder="+1 (306) 260-4467" value="+1 (306) 260-4467" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 focus:outline-none focus:border-[#C8102E]">
+            </div>
+          </div>
+        </div>
+
+        <!-- Shipping Address -->
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <h2 class="font-heading font-bold text-base text-[#0F172A] flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-blue-100 text-[#0F172A] text-xs flex items-center justify-center font-bold">2</span>
+            Shipping Address
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div class="sm:col-span-2">
+              <label class="block font-bold text-slate-700 mb-1">Street Address</label>
+              <input type="text" id="checkout-address" required placeholder="4 Alrita Cres" value="4 Alrita Cres" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 focus:outline-none focus:border-[#C8102E]">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block font-bold text-slate-700 mb-1">Apartment, Suite (Optional)</label>
+              <input type="text" id="checkout-apt" placeholder="Suite 100" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 focus:outline-none focus:border-[#C8102E]">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">City</label>
+              <input type="text" id="checkout-city" required placeholder="Toronto" value="Toronto" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 focus:outline-none focus:border-[#C8102E]">
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <label class="block font-bold text-slate-700 mb-1">Province / State</label>
+                <input type="text" id="checkout-state" required placeholder="ON" value="ON" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 focus:outline-none focus:border-[#C8102E] uppercase">
+              </div>
+              <div>
+                <label class="block font-bold text-slate-700 mb-1">Postal / ZIP Code</label>
+                <input type="text" id="checkout-zip" required placeholder="M1R 4M3" value="M1R 4M3" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 focus:outline-none focus:border-[#C8102E]">
+              </div>
+            </div>
+          </div>
+
+          <!-- Shipping Speed -->
+          <div class="pt-3 border-t border-slate-100">
+            <label class="block text-xs font-bold text-slate-800 uppercase mb-2">Shipping Speed</label>
+            <div class="space-y-2">
+              <label class="flex items-center justify-between p-3 rounded-xl border border-[#C8102E] bg-blue-50/40 cursor-pointer">
+                <div class="flex items-center gap-2.5">
+                  <input type="radio" name="shipping_speed" value="standard" checked onchange="setShippingMethod('standard')" class="accent-[#002D62]">
+                  <div class="text-xs">
+                    <div class="font-bold text-slate-900">Standard Delivery (5–7 Business Days)</div>
+                    <div class="text-[11px] text-slate-500">Free on orders $60+ & all autoships</div>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-[#0F172A]">Standard</span>
+              </label>
+
+              <label class="flex items-center justify-between p-3 rounded-xl border border-slate-300 bg-white hover:border-slate-400 cursor-pointer">
+                <div class="flex items-center gap-2.5">
+                  <input type="radio" name="shipping_speed" value="express" onchange="setShippingMethod('express')" class="accent-[#002D62]">
+                  <div class="text-xs">
+                    <div class="font-bold text-slate-900">Priority Express Dispatch (2–3 Business Days)</div>
+                    <div class="text-[11px] text-slate-500">Fast tracking dispatch</div>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-slate-900">$14.99</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Method UI -->
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <h2 class="font-heading font-bold text-base text-[#0F172A] flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-blue-100 text-[#0F172A] text-xs flex items-center justify-center font-bold">3</span>
+            Payment Method
+          </h2>
+
+          <div class="bg-amber-50 border border-amber-200 text-amber-900 p-3 rounded-xl text-xs flex items-center gap-2 font-medium">
+            <span>ℹ️</span>
+            <span><strong>DEMO MODE:</strong> Frontend simulation. No real charges are made.</span>
+          </div>
+
+          <div class="flex gap-2">
+            <button type="button" id="tab-card" onclick="setPaymentMethod('card')" class="flex-1 py-3 px-4 text-xs font-bold rounded-xl border-2 border-[#C8102E] bg-blue-50/50 text-[#0F172A]">
+              <span>💳 Credit / Debit Card</span>
+            </button>
+            <button type="button" id="tab-paypal" onclick="setPaymentMethod('paypal')" class="flex-1 py-3 px-4 text-xs font-bold rounded-xl border border-slate-300 bg-white text-slate-700">
+              <span>🅿️ PayPal</span>
+            </button>
+          </div>
+
+          <div id="card-payment-form" class="space-y-3 pt-1 text-xs">
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Card Number</label>
+              <input type="text" placeholder="4242 •••• •••• 4242" value="4242 •••• •••• 4242" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 font-mono">
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block font-bold text-slate-700 mb-1">Expiration (MM/YY)</label>
+                <input type="text" placeholder="12/28" value="12/28" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 text-center">
+              </div>
+              <div>
+                <label class="block font-bold text-slate-700 mb-1">Security Code (CVC)</label>
+                <input type="text" placeholder="888" value="888" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 text-center">
+              </div>
+            </div>
+          </div>
+
+          <div id="paypal-payment-form" class="p-5 text-center bg-slate-50 rounded-xl border border-slate-200 hidden">
+            <div class="text-xl font-bold text-blue-700 font-display">PayPal</div>
+            <p class="text-xs text-slate-500 mt-1">You will be redirected to PayPal to complete your purchase securely.</p>
+          </div>
+
+          <div class="pt-3">
+            <button 
+              type="submit" 
+              class="w-full bg-[#C8102E] hover:bg-[#A60D24] text-white font-extrabold text-sm sm:text-base py-4 px-6 rounded-xl shadow-xl transition-all uppercase tracking-wider flex items-center justify-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              <span>Place Order & Complete</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: Order Summary -->
+      <div class="lg:col-span-5 space-y-5 lg:sticky lg:top-24">
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <h3 class="font-heading font-black text-lg text-[#0F172A] pb-3 border-b border-slate-200">Order Summary</h3>
+
+          <div id="checkout-items-list" class="max-h-80 overflow-y-auto pr-1"></div>
+
+          <div class="pt-2 border-t border-slate-200 flex gap-2">
+            <input 
+              type="text" 
+              id="checkout-coupon-code" 
+              placeholder="Promo Code (BUDDY15)" 
+              class="flex-1 bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs uppercase font-bold focus:outline-none">
+            <button 
+              type="button" 
+              onclick="handleCheckoutCoupon()" 
+              class="bg-[#0F172A] hover:bg-[#0F172A] text-white font-bold text-xs px-4 py-2 rounded-xl transition-colors">
+              Apply
+            </button>
+          </div>
+
+          <div class="space-y-2 text-xs pt-2 border-t border-slate-200">
+            <div class="flex justify-between text-slate-600">
+              <span>Subtotal:</span>
+              <span class="font-bold text-slate-900" id="checkout-subtotal">$0.00</span>
+            </div>
+
+            <div class="flex justify-between text-emerald-800 hidden" id="checkout-discount-row">
+              <span>Promo Discount:</span>
+              <span class="font-bold" id="checkout-discount">-$0.00</span>
+            </div>
+
+            <div class="flex justify-between text-slate-600">
+              <span>Shipping:</span>
+              <span class="font-bold text-slate-900" id="checkout-shipping">$0.00</span>
+            </div>
+
+            <div class="pt-2 border-t border-slate-200 flex justify-between items-baseline">
+              <span class="font-bold text-sm text-[#0F172A]">Total Due:</span>
+              <span class="font-heading font-black text-2xl text-[#0F172A]" id="checkout-total">$0.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+  </main>
+
+  <!-- SUCCESS MODAL -->
+  <div id="order-success-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden">
+    <div class="bg-white rounded-2xl p-6 sm:p-8 max-w-lg w-full text-center space-y-4 shadow-2xl border border-slate-200">
+      <div class="w-14 h-14 bg-emerald-100 text-emerald-800 text-3xl rounded-full flex items-center justify-center mx-auto">
+        🎉
+      </div>
+      <div>
+        <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Order Confirmed</span>
+        <h2 class="font-heading font-black text-2xl text-[#0F172A] mt-1">Thank You For Your Order!</h2>
+        <p class="text-xs text-slate-500 mt-1">
+          Your Pet Buddy order is confirmed! A confirmation email was sent to <strong id="modal-customer-email" class="text-slate-800">your email</strong>.
+        </p>
+      </div>
+
+      <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-left text-xs space-y-2">
+        <div class="flex justify-between">
+          <span class="text-slate-500">Order Reference:</span>
+          <span class="font-mono font-bold text-[#0F172A]" id="modal-order-id">PB-000000</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-slate-500">Total Paid:</span>
+          <span class="font-bold text-[#0F172A]" id="modal-order-total">$0.00</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-2 pt-2">
+        <a id="modal-track-link" href="order-tracking.html" class="flex-1 bg-[#C8102E] hover:bg-[#A60D24] text-white font-bold text-xs py-3 px-6 rounded-xl transition-colors">
+          Track Your Package &rarr;
+        </a>
+        <a href="shop.html" class="bg-slate-100 text-slate-800 font-bold text-xs py-3 px-6 rounded-xl hover:bg-slate-200">
+          Continue Shopping
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/checkout.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCheckoutSummary();
+    });
+  </script>
+
+</body>
+</html>

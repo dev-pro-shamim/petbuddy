@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Saved Wishlist | Pet Buddy</title>
+  <meta name="description" content="View and manage your favorite all-natural Pet Buddy dog chews, smoked bones, and bulk treats. Move items straight to your cart.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bbs: {
+              navy: '#002D62',
+              'navy-dark': '#071E3D',
+              'navy-light': '#0B3E7A',
+              orange: '#F58220',
+              'orange-dark': '#D9690D',
+              gold: '#FFB800'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Montserrat"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Official Pet Buddy Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/pet-buddy-logo.png">
+  <link rel="apple-touch-icon" href="assets/images/pet-buddy-logo.png">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- TOP PROMO ANNOUNCEMENT BAR -->
+  <div class="bg-[#C8102E] text-white text-[11px] sm:text-xs py-2 px-4 text-center font-bold tracking-wide flex items-center justify-center gap-2 relative z-40 border-b border-[#A60D24] overflow-hidden">
+  <div class="flex items-center gap-2.5 sm:gap-4 flex-wrap justify-center">
+    <span>🍁 CANADIAN OWNED & OPERATED</span>
+    <span class="hidden md:inline">•</span>
+    <span class="bg-white/20 text-white px-2 py-0.5 rounded font-black">OFFICIAL AMAZON SELLER</span>
+    <span class="hidden sm:inline">•</span>
+    <span>100% ALL-NATURAL SINGLE INGREDIENT CHEWS (6" & 12")</span>
+    <span class="hidden lg:inline">•</span>
+    <a href="https://www.amazon.ca/dp/B0H637LFT4/?th=1" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-200 font-extrabold flex items-center gap-1">
+      <span>Shop Amazon Prime Store &rarr;</span>
+    </a>
+    <span class="hidden xl:inline">•</span>
+    <span class="hidden xl:inline">Wholesale: <a href="mailto:infor@pet-buddy.net" class="underline font-bold">infor@pet-buddy.net</a></span>
+  </div>
+</div>
+
+    <!-- STICKY HEADER -->
+  <header class="sticky top-0 bg-white border-b border-slate-200 z-30 shadow-sm transition-shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Row: Large Logo, Search, Amazon Store Button, Wholesale Quote -->
+      <div class="flex items-center justify-between h-24 sm:h-28 gap-4">
+        
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-[#0F172A] rounded-xl hover:bg-slate-100" aria-label="Open Navigation Menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+
+        <!-- OFFICIAL PET BUDDY LOGO (BIGGER & PROMINENT) -->
+        <a href="index.html" class="flex items-center flex-shrink-0 group py-1">
+          <img src="assets/images/pet-buddy-logo.png" alt="Pet Buddy" class="h-16 sm:h-20 md:h-24 w-auto object-contain transition-transform duration-200 group-hover:scale-105">
+        </a>
+
+        <!-- SEARCH BAR (Desktop) -->
+        <div class="hidden md:flex flex-1 max-w-md mx-4 lg:mx-8 relative">
+          <form class="w-full relative" onsubmit="event.preventDefault(); window.location.href='shop.html?search='+encodeURIComponent(this.querySelector('input').value)">
+            <input 
+              type="text" 
+              placeholder="Search 6-inch or 12-inch extra thick bully sticks..." 
+              class="header-search-input w-full bg-slate-50 border border-slate-300 rounded-full py-2.5 pl-11 pr-4 text-xs focus:outline-none focus:border-[#C8102E] focus:bg-white transition-all text-slate-900 placeholder-slate-400">
+            <svg class="w-4 h-4 text-slate-400 absolute left-4 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <div class="search-results-dropdown hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-50"></div>
+          </form>
+        </div>
+
+        <!-- RIGHT HEADER: Amazon Prime Pill & Wholesale Request Button -->
+        <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+          
+          <!-- Official Amazon Store Button -->
+          <a 
+            href="https://www.amazon.ca/dp/B0H637LFT4/?th=1" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="flex items-center gap-2 bg-[#FF9900] hover:bg-[#E88B00] text-slate-950 px-4 py-2.5 rounded-full text-xs font-black transition-all shadow-sm whitespace-nowrap">
+            <svg class="w-4 h-4 fill-current hidden sm:inline" viewBox="0 0 24 24"><path d="M15.42 18.06c-3.14 2.31-7.7 3.52-11.64 1.48-.56-.29-1.07-.65-1.53-1.07-.2-.18-.03-.43.21-.31 3.52 1.77 7.9 2.22 11.65-.12.44-.28.89.2.46.52l.85-.5zm1.5-1.1c-.24-.31-.86-.5-1.35-.38-.28.07-.37.28-.2.49.52.66 1.34 1.14 2.21 1.25.32.04.54-.15.42-.4-.28-.59-.72-.75-1.08-.96zM13.43 14.2c-.37-.48-.68-1.09-.68-1.84 0-1.81 1.38-2.67 3.03-2.67.62 0 1.05.07 1.49.19v-.36c0-.98-.65-1.54-1.74-1.54-.86 0-1.79.29-2.45.69-.17.1-.38-.02-.34-.23.15-.72.48-1.51.52-1.63.04-.12.18-.18.32-.24.77-.33 1.95-.57 3.1-.57 2.28 0 3.86 1.15 3.86 3.65v4.29c0 .54.04 1.09.24 1.57.06.14-.04.28-.18.28-.35 0-1.12-.13-1.42-.48-.09-.1-.13-.26-.15-.42-.51.68-1.4 1.17-2.6 1.17-1.49 0-2.66-.75-3.08-1.7z"/></svg>
+            <span>Buy on Amazon</span>
+          </a>
+
+          <!-- Bulk / Wholesale Quote Modal Trigger -->
+          <button 
+            onclick="openBulkQuoteModal()" 
+            class="bg-[#0F172A] hover:bg-slate-800 text-white px-4 py-2.5 rounded-full text-xs font-black transition-all flex items-center gap-1.5 shadow-sm whitespace-nowrap">
+            <span>Get Bulk Quote</span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- DESKTOP PRIMARY NAVIGATION (UNBREAKABLE: NO WRAP, PREVENTS BREAKING) -->
+      <nav class="hidden lg:flex items-center justify-between border-t border-slate-100 py-3 text-xs uppercase tracking-wider font-extrabold text-[#0F172A] flex-nowrap overflow-x-auto no-scrollbar">
+        <div class="flex items-center space-x-6 xl:space-x-8 flex-nowrap flex-shrink-0">
+          <a href="shop.html" class="hover:text-[#C8102E] transition-colors whitespace-nowrap">Shop All (14)</a>
+          <a href="shop.html?search=6-inch" class="hover:text-[#C8102E] text-[#C8102E] transition-colors whitespace-nowrap">6-Inch Bully Sticks</a>
+          <a href="shop.html?search=12-inch" class="hover:text-[#C8102E] transition-colors whitespace-nowrap">12-Inch Monster Sticks</a>
+          <a href="category.html?cat=chews-bones" class="hover:text-[#C8102E] transition-colors whitespace-nowrap">Bones &amp; Chews</a>
+          <a href="category.html?cat=treats" class="hover:text-[#C8102E] transition-colors whitespace-nowrap">Natural Dog Treats</a>
+          <button onclick="openChewQuiz()" class="hover:text-[#C8102E] text-slate-700 transition-colors uppercase font-bold whitespace-nowrap">Chew Finder Quiz 🐾</button>
+        </div>
+        <div class="flex items-center space-x-6 normal-case font-semibold flex-nowrap flex-shrink-0 pl-4">
+          <a href="https://www.amazon.ca/dp/B0H637LFT4/?th=1" target="_blank" rel="noopener noreferrer" class="text-amber-700 font-extrabold hover:underline flex items-center gap-1 whitespace-nowrap">
+            <span>🇨🇦 Amazon Canada Store</span>
+          </a>
+          <button onclick="openBulkQuoteModal()" class="text-[#C8102E] font-black hover:underline whitespace-nowrap">
+            Request Wholesale Quote &rarr;
+          </button>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE DRAWER MENU -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  <div id="mobile-menu-drawer" class="fixed top-0 bottom-0 left-0 w-80 max-w-[85vw] bg-white z-50 -translate-x-full transition-transform duration-300 shadow-2xl flex flex-col justify-between">
+    <div class="p-5 overflow-y-auto">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div class="flex items-center gap-2">
+          <img src="assets/images/pet-buddy-logo.png" alt="Pet Buddy" class="h-12 sm:h-14 w-auto object-contain">
+          
+        </div>
+        <button id="mobile-menu-close" class="p-1 text-slate-400 hover:text-slate-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="space-y-1 text-sm font-bold text-slate-800 my-4">
+        <a href="shop.html" class="block py-2 px-3 text-[#0F172A] bg-blue-50 rounded-lg">Shop All Products</a>
+        <a href="category.html?cat=bully-sticks" class="block py-2 px-3 text-slate-700">Bully Sticks (6" &amp; 12")</a>
+        <a href="category.html?cat=chews-bones" class="block py-2 px-3 text-slate-700">Bones & Beef Chews</a>
+        <a href="category.html?cat=treats" class="block py-2 px-3 text-slate-700">Natural Dog Treats</a>
+        <a href="category.html?cat=bundles" class="block py-2 px-3 text-slate-700">Variety Bundles</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- WISHLIST MAIN CONTENT -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full">
+    
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-200 gap-4 mb-8">
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-heading font-black text-[#0F172A]">Your Saved Wishlist</h1>
+        <p class="text-xs text-slate-500 mt-1" id="wishlist-count-label">Loading your favorite chews...</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <button id="btn-move-all-cart" onclick="addAllWishlistToCart()" class="bg-[#C8102E] hover:bg-[#A60D24] text-white font-extrabold text-xs py-2.5 px-5 rounded-xl shadow-md transition-all flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          Move All to Cart
+        </button>
+        <a href="shop.html" class="text-xs font-bold text-[#0F172A] hover:underline">
+          Explore More &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Wishlist Grid -->
+    <div id="wishlist-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"></div>
+
+    <!-- Empty Wishlist View -->
+    <div id="empty-wishlist-view" class="bg-white p-14 rounded-2xl border border-slate-200 text-center max-w-md mx-auto shadow-sm hidden">
+      <div class="text-5xl mb-3">❤️</div>
+      <h2 class="font-heading font-black text-xl text-[#0F172A] mb-1">Your Wishlist is Empty</h2>
+      <p class="text-xs text-slate-500 mb-6">
+        Save your dog's favorite Pet Buddy chews and treats to easily order them anytime.
+      </p>
+      <a href="shop.html" class="bg-[#C8102E] hover:bg-[#A60D24] text-white font-extrabold text-xs py-3 px-6 rounded-xl inline-block shadow transition-all">
+        Browse Best Sellers
+      </a>
+    </div>
+
+  </main>
+
+  <!-- SLIDE-OVER CART DRAWER -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 pointer-events-none">
+    <div id="cart-drawer-backdrop" class="fixed inset-0 bg-black opacity-0 transition-opacity duration-300" onclick="closeCartDrawer()"></div>
+    <div id="cart-drawer-panel" class="fixed top-0 bottom-0 right-0 w-full max-w-md bg-white shadow-2xl translate-x-full transition-transform duration-300 flex flex-col justify-between">
+      <div class="p-5 border-b border-slate-200">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <h3 class="font-heading font-bold text-base text-[#0F172A]">Your Shopping Cart</h3>
+            <span class="cart-count-badge bg-blue-100 text-[#0F172A] text-xs font-bold px-2 py-0.5 rounded-full">0</span>
+          </div>
+          <button onclick="closeCartDrawer()" class="p-1 text-slate-400 hover:text-slate-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <div class="mt-3 bg-slate-50 p-3 rounded-xl border border-slate-200">
+          <div id="cart-drawer-shipping-text" class="text-xs text-slate-700 mb-1.5 font-medium">Add $60 more for FREE Delivery!</div>
+          <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+            <div id="cart-drawer-shipping-bar" class="bg-[#F58220] h-full w-0 transition-all duration-300"></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 overflow-y-auto p-5">
+        <div id="cart-drawer-items"></div>
+        <div id="cart-drawer-empty" class="text-center py-16 hidden">
+          <div class="text-4xl mb-3">🦴</div>
+          <h4 class="font-heading font-bold text-base text-slate-800">Your cart is empty</h4>
+          <a href="shop.html" onclick="closeCartDrawer()" class="mt-4 inline-block bg-[#F58220] text-white text-xs font-bold px-6 py-2.5 rounded-xl">Explore All Treats</a>
+        </div>
+      </div>
+      <div class="p-5 bg-slate-50 border-t border-slate-200 space-y-3">
+        <div class="flex items-center justify-between text-sm">
+          <span class="font-medium text-slate-600">Subtotal:</span>
+          <span id="cart-drawer-subtotal" class="font-heading font-black text-lg text-[#0F172A]">$0.00</span>
+        </div>
+        <div class="grid grid-cols-2 gap-2 pt-1">
+          <a href="cart.html" class="bg-white border border-[#C8102E] text-[#0F172A] font-bold text-xs py-3 rounded-xl text-center hover:bg-slate-100">View Cart</a>
+          <a href="checkout.html" class="bg-[#C8102E] hover:bg-[#A60D24] text-white font-extrabold text-xs py-3 rounded-xl text-center shadow-md flex items-center justify-center gap-1">
+            <span>Checkout</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PET BUDDY OFFICIAL FOOTER -->
+  <footer class="bg-[#0F172A] text-slate-300 pt-14 pb-10 border-t border-[#C8102E] mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-white/10 text-xs">
+        
+        <div class="lg:col-span-2 space-y-3">
+          <div class="flex items-center gap-2">
+            <img src="assets/images/pet-buddy-logo.png" alt="Pet Buddy" class="h-12 sm:h-14 w-auto object-contain">
+            
+          </div>
+          <p class="text-slate-400 leading-relaxed max-w-sm">
+            At PetBuddy, pets aren’t just animals—they are cherished companions and family members. Dedicated to supplying premium quality all-natural chews, whole treats, and bulk nutrition.
+          </p>
+          <div class="text-slate-300 space-y-1">
+            <div>📍 <strong>4 Alrita Cres, Toronto, ON, M1R 4M3, Canada</strong></div>
+            <div>📞 Phone: <strong>+1 (306) 260-4467</strong> / <strong>+1 (613) 416-6335</strong></div>
+            <div>✉️ Email: <strong>infor@pet-buddy.net</strong></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Shop Provisions</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="shop.html" class="hover:text-white">Shop All Chews</a></li>
+            <li><a href="category.html?cat=bully-sticks" class="hover:text-white">Bully Sticks (6" &amp; 12")</a></li>
+            <li><a href="category.html?cat=chews-bones" class="hover:text-white">Smoked Femur Bones & Gullet</a></li>
+            <li><a href="category.html?cat=treats" class="hover:text-white">Duck Wings & Chicken Necks</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Customer Care</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="account.html" class="hover:text-white">My Account</a></li>
+            <li><a href="order-tracking.html" class="hover:text-white">Track Your Order</a></li>
+            <li><a href="wishlist.html" class="hover:text-white">Saved Wishlist</a></li>
+            <li><a href="faq.html" class="hover:text-white">Help Center & FAQs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Wholesale & Story</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="about.html" class="hover:text-white">Our Story & Mission</a></li>
+            <li><a href="about.html#wholesale" class="hover:text-white">Wholesale Inquiries</a></li>
+            <li><a href="contact.html" class="hover:text-white">Partner With Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+        <div>&copy; 2026 Pet Buddy. All Rights Reserved.</div>
+        <div class="flex items-center gap-3">
+          <span>🇨🇦 Sourced & Distributed with Pride</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    function renderWishlistPage() {
+      const wishlist = getWishlist();
+      const grid = document.getElementById('wishlist-grid');
+      const emptyView = document.getElementById('empty-wishlist-view');
+      const countLabel = document.getElementById('wishlist-count-label');
+      const moveAllBtn = document.getElementById('btn-move-all-cart');
+
+      if (wishlist.length === 0) {
+        grid.innerHTML = '';
+        emptyView.classList.remove('hidden');
+        moveAllBtn.classList.add('hidden');
+        countLabel.textContent = 'Your wishlist is currently empty';
+        return;
+      }
+
+      emptyView.classList.add('hidden');
+      moveAllBtn.classList.remove('hidden');
+      countLabel.textContent = `You have saved ${wishlist.length} item${wishlist.length > 1 ? 's' : ''}`;
+
+      const products = wishlist.map(id => getProductById(id)).filter(Boolean);
+
+      grid.innerHTML = products.map(p => {
+        const currentPrice = p.salePrice || p.price;
+        return `
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div class="relative aspect-square bg-slate-50 overflow-hidden">
+              <a href="product.html?id=${p.id}">
+                <img src="${p.images[0]}" alt="${p.name}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+              </a>
+              <button onclick="removeFromWishlist('${p.id}')" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 text-red-500 flex items-center justify-center shadow-md hover:bg-red-500 hover:text-white transition-all" title="Remove from Wishlist">
+                ✕
+              </button>
+              ${p.isOdorFree ? '<span class="absolute bottom-2 left-2 bg-[#0F172A] text-white text-[9px] font-black uppercase px-2 py-0.5 rounded">Low-Odor</span>' : ''}
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="text-[10px] font-bold text-[#C8102E] uppercase tracking-wider">${p.categoryName}</div>
+                <h3 class="font-heading font-bold text-xs text-slate-800 mt-1 line-clamp-2">
+                  <a href="product.html?id=${p.id}" class="hover:text-[#0F172A]">${p.name}</a>
+                </h3>
+                <div class="flex items-center gap-2 mt-2">
+                  <span class="text-base font-black text-[#0F172A] font-heading">$${currentPrice.toFixed(2)}</span>
+                  ${p.salePrice ? `<span class="text-xs text-slate-400 line-through">$${p.price.toFixed(2)}</span>` : ''}
+                </div>
+              </div>
+              <div class="pt-3 mt-3 border-t border-slate-100 space-y-2">
+                <button onclick="moveWishlistToCart('${p.id}')" class="w-full bg-[#C8102E] hover:bg-[#A60D24] text-white font-extrabold text-xs py-2.5 px-4 rounded-xl shadow-sm transition-all flex items-center justify-center gap-1.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                  Move to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function addAllWishlistToCart() {
+      const wishlist = getWishlist();
+      wishlist.forEach(id => {
+        const p = getProductById(id);
+        if (p) addToCart(p, p.variants ? p.variants[0] : null, 1, null);
+      });
+      saveWishlist([]);
+      renderWishlistPage();
+      window.showToast('All saved items moved to your cart!', 'success');
+    }
+
+    document.addEventListener('DOMContentLoaded', renderWishlistPage);
+  </script>
+
+</body>
+</html>
